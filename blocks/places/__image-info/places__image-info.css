@@ -1,0 +1,13 @@
+.places__image-info {
+    box-sizing: border-box;
+    margin-top: -3px;
+    padding: 25px 15px 31px 21px;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+    background-color: white;
+}

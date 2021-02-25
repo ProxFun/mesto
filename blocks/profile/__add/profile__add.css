@@ -1,0 +1,19 @@
+.profile__add {
+    min-height: 50px;
+    background: url(../../../images/plus.svg) no-repeat center;
+    border: 2px solid white;
+    width: 150px;
+    margin-left: auto;
+    align-self: center;
+}
+
+.profile__add:hover {
+    opacity: .6;
+}
+
+@media screen and (max-width: 950px){
+    .profile__add {
+        margin-top: 36px;
+        min-width: 100%;
+    }
+}

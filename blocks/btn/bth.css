@@ -1,0 +1,12 @@
+.btn {
+    padding: 0;
+    background-color: initial;
+    border-style: none;
+    background-size: cover;
+    outline: none;
+    justify-self: normal;
+}
+
+.btn:hover {
+    cursor: pointer;
+}

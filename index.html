@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="pages/index.css">
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <meta charset="UTF-8">
+    <title>Место</title>
+</head>
+<body class="page">
+<header class="header">
+    <img class="header__logo" src="images/logo_white.svg" alt="Логотип">
+</header>
+<main class="content">
+    <section class="profile">
+        <img class="profile__image" src="images/zak_iv_kusto.jpg" alt="Жак Ив Кусто">
+        <div class="profile__info">
+            <h1 class="profile__title">Жак-Ив Кусто</h1>
+            <button class="btn profile__edit"></button>
+            <h2 class="profile__subtitle">Исследователь океана</h2>
+        </div>
+        <button class="btn profile__add"></button>
+    </section>
+    <section class="places">
+        <figure class="places__element">
+            <img class="places__image" src="images/karachaevsk.jpg"
+                 alt="Карачаевск">
+            <figcaption class="places__image-info">
+                <p class="places__image-title">Карачаевск</p>
+                <button class="btn places__like-btn"></button>
+            </figcaption>
+        </figure>
+        <figure class="places__element">
+            <img class="places__image" src="images/elbrus.jpg"
+                 alt="Гора Эльбрус">
+            <figcaption class="places__image-info">
+                <p class="places__image-title">Гора Эльбрус</p>
+                <button class="btn places__like-btn"></button>
+            </figcaption>
+        </figure>
+        <figure class="places__element">
+            <img class="places__image" src="images/dombai.jpg"
+                 alt="Домбай">
+            <figcaption class="places__image-info">
+                <p class="places__image-title">Домбай</p>
+                <button class="btn places__like-btn"></button>
+            </figcaption>
+        </figure>
+        <figure class="places__element">
+            <img class="places__image" src="images/elbrus.jpg"
+                 alt="Гора Эльбрус">
+            <figcaption class="places__image-info">
+                <p class="places__image-title">Гора Эльбрус</p>
+                <button class="btn places__like-btn"></button>
+            </figcaption>
+        </figure>
+        <figure class="places__element">
+            <img class="places__image" src="images/dombai.jpg"
+                 alt="Домбай">
+            <figcaption class="places__image-info">
+                <p class="places__image-title">Домбай</p>
+                <button class="btn places__like-btn"></button>
+            </figcaption>
+        </figure>
+        <figure class="places__element">
+            <img class="places__image" src="images/karachaevsk.jpg"
+                 alt="Карачаево-Черкесия">
+            <figcaption class="places__image-info">
+                <p class="places__image-title">Карачаево-Черкесия</p>
+                <button class="btn places__like-btn"></button>
+            </figcaption>
+        </figure>
+    </section>
+</main>
+<footer class="footer">
+    <address class="footer__author">
+        &copy; 2020 Mesto Russia
+    </address>
+</footer>
+
+<div class="popup">
+    <div class="popup__container">
+        <button class="btn popup__btn-exit"></button>
+        <form class="popup__form">
+            <div class="popup__title">Редактировать профиль</div>
+            <input class="input popup__form-field" type="text" id="name" value="">
+            <input class="input popup__form-field" type="text" id="about" value="">
+            <button class="btn popup__btn-submit" type="submit">Сохранить</button>
+        </form>
+
+    </div>
+</div>
+<script src="scripts/index.js"></script>
+</body>
+</html>

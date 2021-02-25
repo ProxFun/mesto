@@ -1,0 +1,9 @@
+.popup__form-field {
+    margin-top: 30px;
+    padding-bottom: 13px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.popup__form-field:first-of-type {
+    margin-top: 54px;
+}
