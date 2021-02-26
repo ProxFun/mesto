@@ -10,6 +10,8 @@
 
 @media screen and (max-width: 500px){
     .popup__btn-exit {
+        width: 26px;
+        height: 26px;
         right: 0;
         top: -54px;
     }

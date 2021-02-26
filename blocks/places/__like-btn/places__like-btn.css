@@ -1,10 +1,10 @@
 .places__like-btn {
-    background: url(../../../images/like.svg) no-repeat scroll 0 0 transparent;
+    background: url(../../../images/like.svg);
     min-width: 22px;
     height: 19px;
     align-self: center;
 }
 
 .places__like-btn:hover {
-    background-image: url(../../../images/like_hover.svg);
+    opacity: 0.5;
 }

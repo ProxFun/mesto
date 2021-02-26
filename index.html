@@ -16,7 +16,7 @@
         <div class="profile__info">
             <h1 class="profile__title">Жак-Ив Кусто</h1>
             <button class="btn profile__edit"></button>
-            <h2 class="profile__subtitle">Исследователь океана</h2>
+            <p class="profile__subtitle">Исследователь океана</p>
         </div>
         <button class="btn profile__add"></button>
     </section>
@@ -25,7 +25,7 @@
             <img class="places__image" src="images/karachaevsk.jpg"
                  alt="Карачаевск">
             <figcaption class="places__image-info">
-                <p class="places__image-title">Карачаевск</p>
+                <h2 class="places__image-title">Карачаевск</h2>
                 <button class="btn places__like-btn"></button>
             </figcaption>
         </figure>
@@ -33,7 +33,7 @@
             <img class="places__image" src="images/elbrus.jpg"
                  alt="Гора Эльбрус">
             <figcaption class="places__image-info">
-                <p class="places__image-title">Гора Эльбрус</p>
+                <h2 class="places__image-title">Гора Эльбрус</h2>
                 <button class="btn places__like-btn"></button>
             </figcaption>
         </figure>
@@ -41,7 +41,7 @@
             <img class="places__image" src="images/dombai.jpg"
                  alt="Домбай">
             <figcaption class="places__image-info">
-                <p class="places__image-title">Домбай</p>
+                <h2 class="places__image-title">Домбай</h2>
                 <button class="btn places__like-btn"></button>
             </figcaption>
         </figure>
@@ -49,7 +49,7 @@
             <img class="places__image" src="images/elbrus.jpg"
                  alt="Гора Эльбрус">
             <figcaption class="places__image-info">
-                <p class="places__image-title">Гора Эльбрус</p>
+                <h2 class="places__image-title">Гора Эльбрус</h2>
                 <button class="btn places__like-btn"></button>
             </figcaption>
         </figure>
@@ -57,7 +57,7 @@
             <img class="places__image" src="images/dombai.jpg"
                  alt="Домбай">
             <figcaption class="places__image-info">
-                <p class="places__image-title">Домбай</p>
+                <h2 class="places__image-title">Домбай</h2>
                 <button class="btn places__like-btn"></button>
             </figcaption>
         </figure>
@@ -65,7 +65,7 @@
             <img class="places__image" src="images/karachaevsk.jpg"
                  alt="Карачаево-Черкесия">
             <figcaption class="places__image-info">
-                <p class="places__image-title">Карачаево-Черкесия</p>
+                <h2 class="places__image-title">Карачаево-Черкесия</h2>
                 <button class="btn places__like-btn"></button>
             </figcaption>
         </figure>
@@ -80,15 +80,16 @@
 <div class="popup">
     <div class="popup__container">
         <button class="btn popup__btn-exit"></button>
-        <form class="popup__form">
-            <div class="popup__title">Редактировать профиль</div>
-            <input class="input popup__form-field" type="text" id="name" value="">
-            <input class="input popup__form-field" type="text" id="about" value="">
+        <form class="popup__form" name="popup-form">
+            <h3 class="popup__title">Редактировать профиль</h3>
+            <input class="input popup__form-field" name="name" type="text" id="name" value="">
+            <input class="input popup__form-field" name="about" type="text" id="about" value="">
             <button class="btn popup__btn-submit" type="submit">Сохранить</button>
         </form>
-
     </div>
 </div>
+
 <script src="scripts/index.js"></script>
+
 </body>
 </html>
