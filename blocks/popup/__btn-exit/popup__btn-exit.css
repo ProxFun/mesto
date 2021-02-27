@@ -8,6 +8,10 @@
     height: 40px;
 }
 
+.popup__btn-exit:hover {
+    opacity: .6;
+}
+
 @media screen and (max-width: 500px){
     .popup__btn-exit {
         width: 26px;

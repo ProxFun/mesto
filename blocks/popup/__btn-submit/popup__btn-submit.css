@@ -9,6 +9,10 @@
     border-radius: 2px;
 }
 
+.popup__btn-submit:hover {
+    opacity: .8;
+}
+
 @media screen and (max-width: 500px){
     .popup__btn-submit {
         margin-top: 45px;
