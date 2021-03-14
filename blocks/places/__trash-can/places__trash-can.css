@@ -1,0 +1,13 @@
+.places__trash-can {
+    background: url(../../../images/trash-can.svg);
+    min-width: 18px;
+    height: 19px;
+    align-self: center;
+    position: absolute;
+    top: 18px;
+    right: 15px;
+}
+
+.places__trash-can:hover {
+    opacity: .6;
+}

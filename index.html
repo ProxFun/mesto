@@ -21,54 +21,16 @@
         <button type="button" class="btn profile__add"></button>
     </section>
     <section class="places">
-        <figure class="places__element">
-            <img class="places__image" src="images/karachaevsk.jpg"
-                 alt="Карачаевск">
-            <figcaption class="places__image-info">
-                <h2 class="places__image-title">Карачаевск</h2>
-                <button type="button" class="btn places__like-btn"></button>
-            </figcaption>
-        </figure>
-        <figure class="places__element">
-            <img class="places__image" src="images/elbrus.jpg"
-                 alt="Гора Эльбрус">
-            <figcaption class="places__image-info">
-                <h2 class="places__image-title">Гора Эльбрус</h2>
-                <button type="button" class="btn places__like-btn"></button>
-            </figcaption>
-        </figure>
-        <figure class="places__element">
-            <img class="places__image" src="images/dombai.jpg"
-                 alt="Домбай">
-            <figcaption class="places__image-info">
-                <h2 class="places__image-title">Домбай</h2>
-                <button type="button" class="btn places__like-btn"></button>
-            </figcaption>
-        </figure>
-        <figure class="places__element">
-            <img class="places__image" src="images/elbrus.jpg"
-                 alt="Гора Эльбрус">
-            <figcaption class="places__image-info">
-                <h2 class="places__image-title">Гора Эльбрус</h2>
-                <button type="button" class="btn places__like-btn"></button>
-            </figcaption>
-        </figure>
-        <figure class="places__element">
-            <img class="places__image" src="images/dombai.jpg"
-                 alt="Домбай">
-            <figcaption class="places__image-info">
-                <h2 class="places__image-title">Домбай</h2>
-                <button type="button" class="btn places__like-btn"></button>
-            </figcaption>
-        </figure>
-        <figure class="places__element">
-            <img class="places__image" src="images/karachaevsk.jpg"
-                 alt="Карачаево-Черкесия">
-            <figcaption class="places__image-info">
-                <h2 class="places__image-title">Карачаево-Черкесия</h2>
-                <button type="button" class="btn places__like-btn"></button>
-            </figcaption>
-        </figure>
+        <template id="card-template">
+            <figure class="places__element">
+                <img class="places__image" src="" alt="">
+                <button type="button" class="btn places__trash-can"></button>
+                <figcaption class="places__image-info">
+                    <h2 class="places__image-title"></h2>
+                    <button type="button" onclick="toggleLikeBtn(event)" class="btn places__like-btn"></button>
+                </figcaption>
+            </figure>
+        </template>
     </section>
 </main>
 <footer class="footer">
@@ -86,6 +48,25 @@
             <input class="input popup__form-field" name="about" type="text" id="about" value="">
             <button class="btn popup__btn-submit" type="submit">Сохранить</button>
         </form>
+    </div>
+</div>
+
+<div class="popup popup_add-card">
+    <div class="popup__container">
+        <button type="button" class="btn popup__btn-exit"></button>
+        <form class="popup__form" name="popup-form">
+            <h3 class="popup__title">Новое место</h3>
+            <input class="input popup__form-field" name="cardName" type="text" id="cardName" placeholder="Название" value="">
+            <input class="input popup__form-field" name="cardSrc" type="text" id="cardSrc" placeholder="Ссылка на картинку" value="">
+            <button class="btn popup__btn-submit" id="saveCard" type="submit">Сохранить</button>
+        </form>
+    </div>
+</div>
+
+<div class="popup popup_image">
+    <div class="popup__container popup__container_image">
+        <button type="button" class="btn popup__btn-exit"></button>
+        <img class="popup__image" src="" alt="">
     </div>
 </div>
 
