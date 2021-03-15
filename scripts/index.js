@@ -48,7 +48,7 @@ function addFormSubmitHandler() {
     event.preventDefault();
     const imgSrc = addPopup.querySelector('#cardSrc').value;
     const imgName = addPopup.querySelector('#cardName').value;
-    const cardData = {'src' : imgSrc, 'name' : imgName};
+    const cardData = {src : imgSrc, name : imgName};
     addCard(cardData);
     addPopupForm.reset();
     closePopup(addPopup);
@@ -81,7 +81,7 @@ function addCard(cardData) {
 
 window.onload = () => {
     initialCards.forEach((item) => {
-        addCard({'src' : item.link, 'name' : item.name});
+        addCard({src : item.link, name : item.name});
     });
 }
 
