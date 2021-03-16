@@ -25,26 +25,23 @@ function openPopup(popup) {
     popup.classList.add('popup_opened');
 }
 
-function openImagePopup(popup) {
-    const popupImg = popup.querySelector('.popup__image');
-    const popupParagraph = popup.querySelector('.popup__image-paragraph');
-    const imgSrcValue = event.target.getAttribute('src');
-    const imgAltValue = event.target.getAttribute('alt');
-    popupParagraph.innerText = imgAltValue;
-    popup.classList.add('popup_opened');
-    popupImg.setAttribute('src', imgSrcValue);
-    popupImg.setAttribute('alt', imgAltValue);
-    openPopup(popup);
+function openImagePopup(src, name) {
+    const popupImg = imagePopup.querySelector('.popup__image');
+    const popupParagraph = imagePopup.querySelector('.popup__image-paragraph');
+    popupParagraph.innerText = name;
+    popupImg.src = src;
+    popupImg.alt = name
+    openPopup(imagePopup);
 }
 
-function editFormSubmitHandler() {
+function editFormSubmitHandler(event) {
     event.preventDefault();
     name.textContent = nameInput.value;
     about.textContent = aboutInput.value;
     closePopup(editPopup);
 }
 
-function addFormSubmitHandler() {
+function addFormSubmitHandler(event) {
     event.preventDefault();
     const imgSrc = addPopup.querySelector('#cardSrc').value;
     const imgName = addPopup.querySelector('#cardName').value;
@@ -60,7 +57,7 @@ function openProfilePopup() {
     openPopup(editPopup);
 }
 
-function removeCard() {
+function removeCard(event) {
     event.target.closest('.places__element').remove();
 }
 
@@ -71,7 +68,7 @@ function createCard(cardData) {
     newCardImg.setAttribute('alt', cardData.name);
     newCard.querySelector('.places__image-title').innerText = cardData.name;
     newCard.querySelector('.places__trash-can').addEventListener('click', removeCard);
-    newCardImg.addEventListener('click', () => openImagePopup(imagePopup));
+    newCardImg.addEventListener('click', () => openImagePopup(cardData.src, cardData.name));
     return newCard;
 }
 
@@ -91,6 +88,6 @@ closePopupBtns.forEach((closeBtn) => {
 });
 
 editBtn.addEventListener('click', () => openProfilePopup());
-editPopupForm.addEventListener('submit', () => editFormSubmitHandler());
-addPopupForm.addEventListener('submit', () => addFormSubmitHandler());
+editPopupForm.addEventListener('submit', () => editFormSubmitHandler(event));
+addPopupForm.addEventListener('submit', () => addFormSubmitHandler(event));
 addCardBtn.addEventListener('click', () => openPopup(addPopup));
